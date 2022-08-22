@@ -10,6 +10,8 @@
 /* ======= Stock data - DO NOT MODIFY ===== */
 const STOCKS = ["aapl", "msft", "amzn", "googl", "tsla"];
 
+// Don't know where to start with this one :/
+
 const CLOSING_PRICES_LAST_5_DAYS_FOR_ALL_STOCKS = [
     [179.19, 180.33, 176.28, 175.64, 172.99], // AAPL
     [340.69, 342.45, 334.69, 333.20, 327.29], // MSFT
