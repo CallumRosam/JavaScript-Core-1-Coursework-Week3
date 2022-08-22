@@ -12,8 +12,13 @@
 */
 
 function getTemperatureReport(cities) {
-    // TODO
-}
+  let arr = []
+  for(let city of cities) {
+    if(temperatureService(city)){
+        arr.push(`The temperature in ${city} is ${temperatureService(city)} degrees.`)
+    }
+  }  return arr;
+} //Test code is wrong - ReferenceError: test is not defined
 
 
 /* ======= TESTS - DO NOT MODIFY ===== */

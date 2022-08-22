@@ -10,7 +10,18 @@ function generateRandomNumber() {
 }
 
 function getRandomNumberGreaterThan50() {
-    // TODO - implement using a do-while loop
+    let i = 0;
+    let arr = [];
+    do{arr.push(generateRandomNumber())
+    if(arr[i] > 50) {
+        arr = arr[i]
+    }
+    i++
+    } while(i <= arr.length) 
+    return arr;
+    // ReferenceError: test is not defined - pretty sure my code is right though (:
+    
+
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */

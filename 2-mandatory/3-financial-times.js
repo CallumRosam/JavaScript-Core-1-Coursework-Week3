@@ -5,8 +5,14 @@
     Implement the function below, which will return a new array containing only article titles which will fit.
 */
 function potentialHeadlines(allArticleTitles) {
-    // TODO
-}
+    let arr = [];
+    for(let title of allArticleTitles) {
+        if(title.length <= 65){
+            arr.push(title)
+        } 
+    }
+    return arr;
+} // ReferenceError: test is not defined... again. 
 
 /*
     The editor of the FT likes short headlines with only a few words!
@@ -14,8 +20,17 @@ function potentialHeadlines(allArticleTitles) {
     (you can assume words will always be seperated by a space)
 */
 function titleWithFewestWords(allArticleTitles) {
-    // TODO
+    let arrLength = [];
+    let smallestValue;
+    let index;
+    for(let title of allArticleTitles) {
+        arrLength.push(title.split(" ").length)
+    }
+    smallestValue = Math.min(...arrLength)
+    index = arrLength.indexOf(smallestValue)
+    return allArticleTitles[index]
 }
+
 
 /*
     The editor of the FT has realised that headlines which have numbers in them get more clicks!
@@ -32,6 +47,15 @@ function headlinesWithNumbers(allArticleTitles) {
 */
 function averageNumberOfCharacters(allArticleTitles) {
     // TODO
+    let average = 0;
+    let sum = 0;
+    for(let i = 0; i < allArticleTitles.length; i++) {
+        sum += allArticleTitles[i].length;
+     }
+     average = Math.random(sum / allArticleTitles.length);
+     return average;
+     // test code is not defined again :(
+
 }
 
 
